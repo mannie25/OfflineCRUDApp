@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { addItem } from '../redux/itemsSlice';
-import { insertItem } from '../database/db';
+import { addItem } from '../redux/reducer';
+import { insertItem } from '../database/Database';
 
 export default function AddEditScreen({ navigation }) {
   const [name, setName] = useState('');

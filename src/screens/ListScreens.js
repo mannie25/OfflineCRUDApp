@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, Text, FlatList, Button, TouchableOpacity } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { setItems, removeItem } from '../redux/itemsSlice';
-import { fetchItems, deleteItem } from '../database/db';
+import { setItems, removeItem } from '../redux/reducer';
+import { fetchItems, deleteItem } from '../database/Database';
 
 export default function ListScreen({ navigation }) {
   const dispatch = useDispatch();
